@@ -60,7 +60,7 @@ const Display = () => {
             <input type="text" name="mobileNumber" placeholder={`schoolPercentage   :   ${mainData.eduData.schoolPercentage}`}></input>
             <input type="text" name="mobileNumber" placeholder={`collegeName           :   ${mainData.eduData.collegeName}`}></input>
             <input type="text" name="mobileNumber" placeholder={`collegePercentage  :   ${mainData.eduData.collegePercentage}`}></input>
-            <Link to="/" style={{textDecoration:"none"}}><button type="button" style={{width : "40%",marginLeft:"15px",marginRight:"20px"}}  >Home</button> </Link> 
+            <Link to="/MultiForm" style={{textDecoration:"none"}}><button type="button" style={{width : "40%",marginLeft:"15px",marginRight:"20px"}}  >Home</button> </Link> 
             <button type="button" onClick={display} style={{width : "40%"}} >Display Data</button> 
             {showModel && <Model message={message}></Model>}
         </form>

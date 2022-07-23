@@ -4,7 +4,7 @@ import { useState } from "react";
 import axios from "axios";
 import Model from "./model";
 import { useDispatch } from "react-redux";
-import {actions} from "../context/context.js";
+import {actions} from "../../context/context.js";
 import { useNavigate ,Link} from "react-router-dom";
 
 
@@ -68,7 +68,7 @@ const Register = () => {
             <input type="email" placeholder={data.email} name="email" value={data.email} onChange={func1}></input>
             <input type="password" placeholder={data.password} name="password" onChange={func1} ></input>
             <input type="password" placeholder={data.confirmPassword} name="confirmPassword" onChange={func1}></input>
-            <Link to="/" style={{textDecoration:"none"}}><button type="button" style={{width : "40%",marginLeft:"15px",marginRight:"20px"}}>Back</button></Link>
+            <Link to="/MultiForm" style={{textDecoration:"none"}}><button type="button" style={{width : "40%",marginLeft:"15px",marginRight:"20px"}}>Back</button></Link>
             <button type="button" onClick={func2} style={{width : "40%"}}>Sign Up</button>
             {showModel && <Model message={modelMessage}></Model>}
         </form>    

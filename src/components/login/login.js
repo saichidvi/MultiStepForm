@@ -57,7 +57,7 @@ const Login  = () => {
             <h1>Login </h1>
             <input type="text" name="username" placeholder={data.username} value={data.username} onChange={func1}></input>
             <input type="password" name="password" placeholder={data.password} onChange={func1}></input>
-            <Link to="/" style={{textDecoration:"none"}}><button type="button" style={{width : "40%",marginLeft:"15px",marginRight:"20px"}}>Back</button></Link>
+            <Link to="/MultiForm" style={{textDecoration:"none"}}><button type="button" style={{width : "40%",marginLeft:"15px",marginRight:"20px"}}>Back</button></Link>
             <button type="button" onClick={func2}  style={{width : "40%"}} >Login</button>
             {showModel && <Model message={message}></Model>}
         </form>

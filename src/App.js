@@ -1,5 +1,5 @@
 import React from "react";
-import Setup from "./components";
+import Setup from "./components/index.js";
 
 function App() {
   return (

@@ -15,7 +15,7 @@ const Setup = () => {
     return(
        <Router>
        <Routes>
-        <Route exact path="/" element={<Home></Home>}></Route>
+        <Route exact path="/MultiForm" element={<Home></Home>}></Route>
         <Route exact path="/register" element={<Register></Register>}></Route>
         <Route exact path="/login" element={<Login></Login>}></Route>
         <Route exact path="/bioform/:id" element={<Bioform></Bioform>}></Route>
